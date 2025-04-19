@@ -75,6 +75,7 @@
           <Property Name="DateLastUpdate" Type="timestamp" StoreGeneratedPattern="Computed" />
           <Property Name="Description" Type="nvarchar(max)" />
           <Property Name="IdType" Type="int" />
+          <Property Name="Photo" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Service_Master">
           <Key>
@@ -486,6 +487,7 @@
           <Property Name="DateLastUpdate" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="IdType" Type="Int32" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Feedback" Relationship="Self.FK_Feedback_Service" FromRole="Service" ToRole="Feedback" />
           <NavigationProperty Name="Service_Master" Relationship="Self.FK_Service_Master_Service" FromRole="Service" ToRole="Service_Master" />
           <NavigationProperty Name="TypeService" Relationship="Self.FK_Service_TypeService" FromRole="Service" ToRole="TypeService" />
@@ -740,7 +742,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Matie_420_ZagirovAlmirEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Matie_420_ZagirovAlmirEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Client" EntityType="Self.Client" />
           <EntitySet Name="Employee" EntityType="Self.Employee" />
           <EntitySet Name="Feedback" EntityType="Self.Feedback" />
@@ -821,7 +823,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище Matie_420_ZagirovAlmirModelContainer" CdmEntityContainer="Matie_420_ZagirovAlmirEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище Matie_420_ZagirovAlmirModelContainer" CdmEntityContainer="Matie_420_ZagirovAlmirEntities2">
           <EntitySetMapping Name="Client">
             <EntityTypeMapping TypeName="Matie_420_ZagirovAlmirModel.Client">
               <MappingFragment StoreEntitySet="Client">
@@ -897,6 +899,7 @@
                 <ScalarProperty Name="DateLastUpdate" ColumnName="DateLastUpdate" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="IdType" ColumnName="IdType" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

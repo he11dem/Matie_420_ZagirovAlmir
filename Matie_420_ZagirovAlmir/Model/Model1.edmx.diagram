@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="664707ee01ef4392b8fe0ca7b508b734" Name="Diagram1">
+      <Diagram DiagramId="28da1aac99e64ad1940ea1da41bebc23" Name="Diagram1">
         <EntityTypeShape EntityType="Matie_420_ZagirovAlmirModel.Client" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
         <EntityTypeShape EntityType="Matie_420_ZagirovAlmirModel.Employee" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
         <EntityTypeShape EntityType="Matie_420_ZagirovAlmirModel.Feedback" Width="1.5" PointX="7.5" PointY="8.125" IsExpanded="true" />
@@ -17,7 +17,7 @@
         <EntityTypeShape EntityType="Matie_420_ZagirovAlmirModel.StatusKval" Width="1.5" PointX="5.25" PointY="17.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Matie_420_ZagirovAlmirModel.StatusService" Width="1.5" PointX="8.25" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Matie_420_ZagirovAlmirModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Matie_420_ZagirovAlmirModel.Tranzaktions" Width="1.5" PointX="7.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Matie_420_ZagirovAlmirModel.Tranzaktions" Width="1.5" PointX="7.5" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="Matie_420_ZagirovAlmirModel.TypeService" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
         <AssociationConnector Association="Matie_420_ZagirovAlmirModel.FK_Feedback_Client" ManuallyRouted="false" />
         <AssociationConnector Association="Matie_420_ZagirovAlmirModel.FK_ServiceAppointment_Client" ManuallyRouted="false" />

@@ -13,10 +13,10 @@ namespace Matie_420_ZagirovAlmir.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Matie_420_ZagirovAlmirEntities : DbContext
+    public partial class Matie_420_ZagirovAlmirEntities2 : DbContext
     {
-        public Matie_420_ZagirovAlmirEntities()
-            : base("name=Matie_420_ZagirovAlmirEntities")
+        public Matie_420_ZagirovAlmirEntities2()
+            : base("name=Matie_420_ZagirovAlmirEntities2")
         {
         }
     

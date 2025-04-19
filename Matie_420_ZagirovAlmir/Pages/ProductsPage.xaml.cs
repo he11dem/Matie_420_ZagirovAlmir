@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Matie_420_ZagirovAlmir.Model;
+using Matie_420_ZagirovAlmir.Model.DB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,16 @@ namespace Matie_420_ZagirovAlmir.Pages
     /// </summary>
     public partial class ProductsPage : Page
     {
+        public static List<Service> services { get; set; }
+        
         public ProductsPage()
         {
             InitializeComponent();
+            services = new List<Service>(DBConnection.matie.Service.ToList());
+            ServiceLV.ItemsSource = services;
+
+            this.DataContext = services;
+
         }
 
         private void MinimizeButton_Click(object sender, RoutedEventArgs e)

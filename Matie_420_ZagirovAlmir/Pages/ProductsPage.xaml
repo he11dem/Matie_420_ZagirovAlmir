@@ -100,7 +100,7 @@
                   HorizontalAlignment="Left"
                   VerticalAlignment="Center"
                   Margin="475,0,0,0"
-                  Width="1064"
+                  Width="1062"
                   Height="692">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>

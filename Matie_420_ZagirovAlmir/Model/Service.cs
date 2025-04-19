@@ -28,6 +28,7 @@ namespace Matie_420_ZagirovAlmir.Model
         public byte[] DateLastUpdate { get; set; }
         public string Description { get; set; }
         public Nullable<int> IdType { get; set; }
+        public string Photo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Feedback> Feedback { get; set; }
