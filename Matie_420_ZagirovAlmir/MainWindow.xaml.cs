@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Matie_420_ZagirovAlmir.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Matie_420_ZagirovAlmir
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.NavigationService.Navigate(new AuthorizationPage());
         }
     }
 }
