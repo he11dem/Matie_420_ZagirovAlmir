@@ -36,5 +36,10 @@ namespace Matie_420_ZagirovAlmir.Pages
             Window parentWindow = Window.GetWindow(this);
             parentWindow?.Close();
         }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AuthorizationPage());
+        }
     }
 }

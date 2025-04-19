@@ -49,5 +49,10 @@ namespace Matie_420_ZagirovAlmir.Pages
         {
 
         }
+
+        private void btnLogin_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ProductsPage());
+        }
     }
 }

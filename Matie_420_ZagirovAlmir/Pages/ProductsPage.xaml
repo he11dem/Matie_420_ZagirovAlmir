@@ -52,6 +52,13 @@
         FontSize="14"
         Padding="10,5"
          Margin="34,810,1646,212" Click="ServiceBtn_Click"/>
+        <Button x:Name="CustomBtn" 
+                Content="Кастом" 
+                Background="#FF007ACC"
+                Foreground="White"
+                FontSize="14"
+                Padding="10,5"
+                Margin="540,78,1140,944" />
         <Button x:Name="ExitBtn" 
                 Content="Назад" 
                 Background="Red"
@@ -75,7 +82,7 @@
                 MaxLength="10"
                 Width="228" 
                 Text="{Binding InputText, Mode=TwoWay}" 
-                Foreground="Black" Margin="1676,108,0,0" 
+                Foreground="Black" Margin="1668,111,0,0" TextChanged="SearchTbx_TextChanged" 
     
     />
         <TextBlock 
@@ -110,7 +117,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
-                        <Border Background="#CDDCDF"
+                        <Border Background="WhiteSmoke"
                                 Width="750"
                                 Height="220"
                                 Margin="10 0 0 0"
@@ -160,5 +167,12 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button x:Name="CosplayBtn" 
+            Content="Косплей" 
+            Background="#FF007ACC"
+            Foreground="White"
+            FontSize="14"
+            Padding="10,5"
+            Margin="836,74,844,948" />
     </Grid>
 </Page>
