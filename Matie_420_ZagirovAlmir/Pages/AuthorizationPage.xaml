@@ -67,7 +67,7 @@
                     Foreground="White"
                     FontSize="14"
                     Padding="10,5"
-                    Click="BtnLogin_Click"/>
+                    />
             <Button x:Name="RegistrBtn" 
                     Content="Регистрация" 
                     Background="#FF007ACC"

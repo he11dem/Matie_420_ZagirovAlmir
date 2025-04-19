@@ -24,5 +24,17 @@ namespace Matie_420_ZagirovAlmir.Pages
         {
             InitializeComponent();
         }
+
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window parentWindow = Window.GetWindow(this);
+            parentWindow.WindowState = WindowState.Minimized;
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window parentWindow = Window.GetWindow(this);
+            parentWindow?.Close();
+        }
     }
 }

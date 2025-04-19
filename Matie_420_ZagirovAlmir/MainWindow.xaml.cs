@@ -24,7 +24,7 @@ namespace Matie_420_ZagirovAlmir
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.NavigationService.Navigate(new AuthorizationPage());
+            MainFrame.NavigationService.Navigate(new ProductsPage());
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
