@@ -16,22 +16,19 @@ using System.Windows.Shapes;
 namespace Matie_420_ZagirovAlmir.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AuthorizationPage.xaml
+    /// Логика взаимодействия для ProductsPage.xaml
     /// </summary>
-    public partial class AuthorizationPage : Page
+    public partial class ProductsPage : Page
     {
-        public AuthorizationPage()
+        public ProductsPage()
         {
             InitializeComponent();
         }
 
-       
-
         private void MinimizeButton_Click(object sender, RoutedEventArgs e)
         {
-            
-                Window parentWindow = Window.GetWindow(this);
-                parentWindow.WindowState = WindowState.Minimized;
+            Window parentWindow = Window.GetWindow(this);
+            parentWindow.WindowState = WindowState.Minimized;
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
@@ -40,14 +37,14 @@ namespace Matie_420_ZagirovAlmir.Pages
             parentWindow?.Close();
         }
 
-        private void RegistrBtn_Click(object sender, RoutedEventArgs e)
+        private void ServiceBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new RegistrationPage());
+            NavigationService.Navigate(new ServicePage());
         }
 
-        private void BtnLogin_Click(object sender, RoutedEventArgs e)
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new AuthorizationPage());
         }
     }
 }

@@ -10,6 +10,9 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
+        Icon="pack://application:,,,/Matie_420_ZagirovAlmir;component/Images/Logo.ico"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown"
         >
     <Grid>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>

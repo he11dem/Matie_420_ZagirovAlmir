@@ -26,5 +26,13 @@ namespace Matie_420_ZagirovAlmir
             InitializeComponent();
             MainFrame.NavigationService.Navigate(new AuthorizationPage());
         }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
     }
 }
